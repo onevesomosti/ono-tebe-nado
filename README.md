@@ -1,1 +1,1 @@
-https://github.com/onevesomosti/ono-tebe-nado.git
+https://github.com/onevesomosti/ono-tebe-nado
