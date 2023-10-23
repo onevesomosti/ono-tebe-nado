@@ -17,33 +17,36 @@
   font-style: normal;
   line-height: normal;
   text-underline-position: under;
-  white-space: nowrap;
+}
+/*псевдоклассы у нас только в следующем спринте, но я попробую*/
+.header__menu-link:hover {
+  font-size: 19px;
 }
 
-.header__menu-item_active {
+.header__menu-link_no-bullit {
   list-style-type: none;
 }
 
-.header__menu-item_active .header__menu-link {
+.header__menu-link_active {
   text-decoration: none;
+  pointer-events: none;
 }
 
 .header_logo-image {
   height: 105px;
 }
 
-.header__address {
+.address {
   justify-self: end;
-  width: 240px;
+  max-width: 240px;
   font-weight: 400;
   font-size: 18px;
   font-style: normal;
   line-height: 135%;
 }
 
-.header__address a {
+.address a {
   text-underline-position: under;
-  white-space: nowrap;
 }
 
 .cover {
@@ -95,7 +98,6 @@
 }
 
 .letter-spacing-extended {
-  line-height: 100%;
   letter-spacing: 60px;
 }
 
@@ -130,6 +132,11 @@
   line-height: normal;
   text-transform: uppercase;
   background: transparent;
+  cursor: pointer;
+}
+
+.bet-button:hover {
+  box-shadow: inset 0 0 15px 0 #fff;
 }
 
 .lots {
@@ -152,6 +159,7 @@
   min-width: 100%;
   padding: 27px 0 30px;
   list-style-type: none;
+  z-index: -1;
 }
 
 .lots__card-list-item {
@@ -236,6 +244,7 @@
 
 .about__logo {
   width: 240px;
+  height: 240px;
   margin: 0 95px;
   border-radius: 120px;
   background: #000;
@@ -256,6 +265,9 @@
   text-transform: uppercase;
 }
 .about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   font-weight: 400;
   font-size: 20px;
   font-style: normal;
@@ -282,18 +294,23 @@
   text-underline-position: under;
 }
 
+.footer__menu-link:hover {
+  font-size: 19px;
+}
+
 .footer__menu-link_active {
   text-decoration: none;
+  pointer-events: none;
 }
 
 .footer__social-list {
   display: flex;
   justify-content: space-between;
-  width: 240px;
   list-style-type: none;
-
+  gap: 48px;
 }
 
 .footer__social-icon {
   height: 48px;
+  object-fit: contain;
 }
