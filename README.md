@@ -1,4 +1,1 @@
-# ono-tebe-nado
-Проект "Оно тебе надо"
-
-Одностраничный сайт. Первый самостоятельный проект. 
+https://github.com/onevesomosti/ono-tebe-nado
