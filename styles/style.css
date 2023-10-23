@@ -154,7 +154,7 @@
   list-style-type: none;
 }
 
-.lots__card-list-item{
+.lots__card-list-item {
   min-height: 450px;
   /*flex-grow: 1;/* Из рекомендаций к проектной работе. Но не уверена, что тут так лучше. Обсудить на Q&A*/
 }
@@ -209,8 +209,7 @@
 }
 
 .card__title,
-.card__text
- {
+.card__text {
   z-index: 1;
 }
 
