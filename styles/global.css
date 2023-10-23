@@ -2,9 +2,11 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* outline: 1px solid red; /* для дебага, убрать*/
 }
 
 body {
+  /*width: 1440px;/* для дебага, убрать*/
   min-width: 1100px;
   margin: 0;
   font-family: Raleway, sans-serif;
